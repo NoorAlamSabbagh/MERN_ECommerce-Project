@@ -1,4 +1,6 @@
 import './App.css';
+import Cart from './features/cart/Cart';
+import CartPage from './pages/CartPage';
 import Home from './pages/Home';
 import LoginPage from './pages/LoginPage';
 import SignUpPage from './pages/SignUpPage';
@@ -21,6 +23,10 @@ const router = createBrowserRouter([
   {
     path: "/signup",
     element: <SignUpPage></SignUpPage>,
+  },
+  {//Only for testing-then page will be added
+    path: "/cart",
+    element: <CartPage></CartPage>,
   },
 ]);
 
